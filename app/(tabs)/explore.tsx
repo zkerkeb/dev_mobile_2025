@@ -12,7 +12,7 @@ const ExploreScreen = () => {
   return(
     <SafeAreaView>
     <ThemedView>
-      <ThemedText>Explore</ThemedText>
+      <ThemedText>Explore test</ThemedText>
     </ThemedView>
 
     <Button title="Disconnect" onPress={logout} />
