@@ -10,7 +10,12 @@
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.hikkary.dev-mobile-2025"
+      "bundleIdentifier": "com.hikkary.dev-mobile-2025",
+      "infoPlist": {
+        "NSBluetoothAlwaysUsageDescription": "Cette application utilise le Bluetooth pour le chat de proximité",
+        "NSBluetoothPeripheralUsageDescription": "Cette application utilise le Bluetooth pour se connecter à d'autres appareils"
+      },
+      "appleTeamId": "Y4JAHH2S9Z"
     },
     "android": {
       "adaptiveIcon": {
@@ -20,7 +25,24 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "BLUETOOTH",
+        "BLUETOOTH_ADMIN",
+        "BLUETOOTH_CONNECT",
+        "BLUETOOTH_SCAN",
+        "BLUETOOTH_ADVERTISE",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "BLUETOOTH",
+        "BLUETOOTH_ADMIN",
+        "BLUETOOTH_CONNECT",
+        "BLUETOOTH_SCAN",
+        "BLUETOOTH_ADVERTISE",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ],
+      "package": "com.hikkary.devmobile2025"
     },
     "web": {
       "output": "static",

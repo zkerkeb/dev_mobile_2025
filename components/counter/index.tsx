@@ -1,5 +1,6 @@
 import { Button } from "@react-navigation/elements";
 import { useEffect, useState } from "react";
+import { StyleSheet, View } from "react-native";
 import { ThemedText } from "../themed-text";
 
 const fakeArray = [2,4,5,6,7,8,9,10 ]
@@ -10,12 +11,13 @@ const Counter = ({beginValue = 0}) => {
   console.log("🚀 ~ Counter ~ myArray:", myArray)
 
   useEffect(() => {
-    alert(count)
+    // alert(count)
   }, [count])
 
 
   return(
-    <>
+    
+    <View style={styles.container}>
     <ThemedText type="title">Counter</ThemedText>
     <ThemedText type="title">{count}</ThemedText>
     <Button onPress={() => setCount(count + 1)}>Increment</Button>
@@ -30,14 +32,21 @@ const Counter = ({beginValue = 0}) => {
     ))}
 
     
-    </>
+    </View>
   )
 
 
-
-
-
-
 }
+
+
+const styles = StyleSheet.create({
+  container: {
+    // width: '100%',
+
+    justifyContent: 'center',
+    alignItems: 'center',
+    // backgroundColor: 'green',
+  },
+});
 
 export default Counter;
